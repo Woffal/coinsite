@@ -45,7 +45,11 @@ export default function SiteBackground({
 
   return (
     <div aria-hidden className="fixed inset-0 -z-10 pointer-events-none bg-[#0b0f1d]">
+      {/* Canvas render */}
       <canvas ref={canvasRef} className="block w-full h-full" />
+      {/* Soft radial gradient overlay for depth */}
+      <div className="absolute inset-0 bg-[radial-gradient(1200px_600px_at_50%_-10%,rgba(249,197,78,0.10),transparent_60%)] bg-no-repeat" />
+      <div className="absolute inset-0 bg-[radial-gradient(1000px_500px_at_50%_110%,rgba(233,68,95,0.08),transparent_55%)] bg-no-repeat" />
     </div>
   )
 }

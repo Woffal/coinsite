@@ -54,7 +54,7 @@ export default function Nav() {
   // Desktop side nav with CSS "liquid glass" background (no external deps)
   const DesktopNav = (
     <aside className="hidden md:block fixed left-4 top-24 z-40">
-      <div className="relative w-56 rounded-2xl border border-white/10 overflow-hidden p-2">
+      <div className="relative w-56 rounded-2xl border border-white/10 overflow-hidden p-2 shadow-[0_6px_24px_rgba(0,0,0,0.2)]">
         {/* Spline liquid glass background for NAV ONLY (runtime) */}
         <NavSpline sceneUrl="https://prod.spline.design/TI7oZjQKICYUXDQx/scene.splinecode" className="opacity-50" />
         <div className="absolute inset-0 bg-white/5 backdrop-blur-md rounded-2xl pointer-events-none" aria-hidden />
