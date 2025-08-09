@@ -138,7 +138,7 @@ export default function Page() {
       <SiteBackground />
 
       {/* Header */}
-      <header className="border-b border-white/10 bg-transparent sticky top-0 z-40">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-background/70 backdrop-blur-xl supports-[backdrop-filter]:bg-background/40">
         <div className="container mx-auto px-4 max-w-[1200px] py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -250,11 +250,10 @@ export default function Page() {
       <section className="relative py-16 text-center">
         <div className="container mx-auto px-4 max-w-[1200px] relative z-10">
           <h2
-            className="font-bold text-[#f9c54e] mx-auto"
+            className="font-bold text-[#f9c54e] mx-auto tracking-tight [text-wrap:balance] drop-shadow-[0_0_8px_rgba(249,197,78,0.35)]"
             style={{
               fontSize: "clamp(2.5rem, 6vw, 3.75rem)",
               lineHeight: 1.1,
-              textShadow: "0 0 8px rgba(249,197,78,0.35)",
             }}
           >
             Mint SkyBlock Coins
@@ -389,7 +388,7 @@ export default function Page() {
       </Section>
 
       {/* Features */}
-      <section className="py-16 bg-[#15203c]/30">
+      <section className="py-16 bg-[#15203c]/30 border-y border-white/10">
         <div className="container mx-auto px-4 max-w-[1200px]">
           <h3 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">Why Choose Us?</h3>
           <p className="text-center text-gray-400 mb-12 text-lg">Trusted by elite SkyBlock players worldwide</p>

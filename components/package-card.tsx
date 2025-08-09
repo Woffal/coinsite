@@ -46,7 +46,7 @@ type PackageCardProps = {
 export default function PackageCard({ pkg, onAddToCart = () => {} }: PackageCardProps) {
   return (
     <Card
-      className={`group relative bg-[#15203c]/50 backdrop-blur-sm border ${tierBorder[pkg.tier]} border-opacity-30 hover:border-opacity-70 transition-transform duration-200 hover:-translate-y-0.5 rounded-xl`}
+      className={`group relative bg-[#15203c]/50 backdrop-blur-md border ${tierBorder[pkg.tier]} border-opacity-30 hover:border-opacity-70 transition-transform duration-200 hover:-translate-y-1 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.18)]`}
     >
       {/* Single emphasis badge only */}
       {pkg.popular ? (
